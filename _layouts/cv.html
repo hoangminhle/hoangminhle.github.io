@@ -1,0 +1,94 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+<style>
+  .bottom-three {
+     margin-bottom: 1.5cm;
+   }
+  .bottom-small {
+     margin-bottom: 1cm;
+   }
+</style>
+</head>
+
+<body class="page">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/business.png" alt="Work Experience" width="70" height="70"></p>
+    <p align="left">&#8226 I am a PhD Candidate focusing on <strong>machine learning</strong> at <a href="http://www.caltech.edu/" target="_blank">Caltech</a>, with Professor <a href="http://www.yisongyue.com/" target="_blank">Yisong Yue</a>.</p>
+    <!--p align="center">&#8226 I am at the <strong>technical advisory board</strong> of <a href="http://www.vilynx.com/index.html" target="_blank">Vilynx</a>.</p-->
+    <p align="left">&#8226 I spent summer 2017 at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-york/" target="_blank">Microsoft Research (NYC)</a>, with <a href="http://alekhagarwal.net/" target="_blank">Alekh Agarwal</a> and <a href="https://www.microsoft.com/en-us/research/people/mdudik/" target="_blank">Miro Dud&iacute;k</a>.</p>
+    <p align="left">&#8226 I interned at <a href="https://www.disneyresearch.com/" target="_blank">Disney Research</a> (Pittsburgh) in summer 2016, resulting in a pending patent.</p>
+    <p align="left">&#8226 I was a graduate researcher at the <a href="http://specs.upf.edu/" target="_blank">Synthetic Perceptive, Emotive and Cognitive Systems</a> group (SPECS) at the Universitat Pompeu Fabra in Barcelona, Spain in 2013.</p>
+    <p align="left">&#8226 I applied recent work to the domains of autonomous camera planning for broadcasting, modeling human decision making in team sports, maze navigation, Atari games.</p>
+    <p align="left" class="bottom-three">&#8226 I am exploring ways to integrate more feedback and domain knowledge into the learning process (i.e. oppostite of tabula rasa learning).</p>
+
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/study2.png" alt="Education" width="70" height="70"></p>
+    <p align="left">&#8226 I did my <strong>Master</strong> thesis in Cognitive Science at the <a href="http://specs.upf.edu/" target="_blank">Universitat Pompeu Fabra</a> in Barcelona.</p>
+    <p align="left">&#8226 I received a bachelor in Mathematics from <a href="https://www.bucknell.edu/" target="_blank">Bucknell University</a> in Pennsylvania.</p>
+    <p align="left" class="bottom-three">&#8226 I grew up and finished highschool in Hanoi, Vietnam .</p>
+    
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/computer2.png" alt="Computer Skills" width="80" height="80"></p>
+    <!--p align="center">&#8226 Give me the <strong>STL</strong> library and a <strong>VCS</strong> repository on which to store the <strong>C++</strong> code, and I shall move the world. Or was it about levers? &#12484;</p-->
+    <p align="left">&#8226 Watch <a href="https://vimeo.com/238229861" target="_blank">my talk </a> at ICML 2017 in Sydney, Australia on learning from demonstrations from multiple agents. </p>
+    <p align="left">&#8226 Watch <a href="https://www.youtube.com/watch?v=130r0XQIKq0" target="_blank">my talk </a> at SSAC 2017 in Boston, MA on applying machine learning to model a soccer team from real-life professional data (what we called "ghosting"). </p>
+    <p align="left" class="bottom-three">&#8226 Watch <a href="http://techtalks.tv/talks/smooth-imitation-learning-for-online-sequence-prediction/62473/" target="_blank">my talk </a> at ICML 2016 in New York, NY on learning to mimic human actions both accurately and smoothly.</p>
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/images/CV/talk.png" alt="Languages" width="70" height="70"></p>
+    <p align="left">&#8226 I use <strong>Python</strong> and occasionally <strong>Matlab</strong> for fast prototyping and testing.</p>
+    <p align="left">&#8226 I've been a teaching assistant for CMS 159, the <a href="https://taehwanptl.github.io/" target="_blank"> Advanced Machine Learning</a> course at Caltech.</p>
+    <p align="left">&#8226 I play soccer, run and row.</p>
+    <p align="left" class="bottom-three">&#8226 I was an investment banking analyst at Merrill Lynch and private equity investor at <a href="http://www.capitalz.com/" target="_blank">Capital Z Partners </a> in my previous life.</p>
+    
+    
+    
+    {{ content }}
+    </div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}          
+
+</body>
+</html>
