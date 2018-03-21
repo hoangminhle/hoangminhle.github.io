@@ -1,4 +1,4 @@
-title:            Hoang Le @ Caltech
+title:            "[Hoang Le's Page]"
 #description:      Welcome to my site.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              //hoangminhle.github.io
@@ -28,7 +28,7 @@ bing_verify:
 links:
   #- title: intro
   - title: "[About]"
-    url: /cv/
+    url: /about/
   - title: "[Publications]"
     url: /publications/
   #- title: Code
