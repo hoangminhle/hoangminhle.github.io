@@ -13,4 +13,3 @@ I'm interested in sequential decision problems: specifically, how to efficiently
 
 <br />
 I'm fortunate to spend previous two summers at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-york/" style="color:#e77f00" target="_blank">Microsoft Research</a> in NYC and <a href="https://www.disneyresearch.com/" style="color:#e77f00" target="_blank">Disney Research</a> in Pittsburgh. I'm currently supported by an Amazon AI Graduate fellowship.
-
