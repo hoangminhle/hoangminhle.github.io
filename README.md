@@ -1,2 +1,2 @@
 # hoangminhle.github.io
-Hoang Minh Le - PhD Candidate in Computing + Mathematical Sciences @ Caltech
+Hoang Minh Le - Postdoc @ Microsoft Research. PhD in Computing + Mathematical Sciences @ Caltech
