@@ -1,2 +1,2 @@
 # hoangminhle.github.io
-Hoang Minh Le - Postdoc @ Microsoft Research. PhD in Computing + Mathematical Sciences @ Caltech
+Hoang Minh Le - Staff Research Scientist @ Argo AI.
